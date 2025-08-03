@@ -1,0 +1,7 @@
+[project]
+name = "thomasbbrunner"
+version = "0.0.0"
+description = "GitHub homepage."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []

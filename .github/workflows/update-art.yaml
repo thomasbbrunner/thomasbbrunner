@@ -2,8 +2,9 @@ name: Update Art
 
 on:
   # Triggers the workflow at 02:00 UTC every day.
-  schedule:
-    - cron: '0 2 * * *'
+  # TODO re-enable
+  # schedule:
+  #   - cron: '0 2 * * *'
 
   # Allows you to run this workflow manually from the Actions tab.
   workflow_dispatch:
@@ -32,6 +33,7 @@ jobs:
       - name: Run script
         run: uv run main.py
 
+      # TODO this is failing
       - name: Commit and push if changed
         run: |
           git config --global user.name "github-actions[bot]"
